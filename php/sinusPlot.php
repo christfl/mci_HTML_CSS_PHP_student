@@ -43,7 +43,7 @@ $graph->subtitle->Set('x in degrees');
 $graph->xaxis->title->SetFont(FF_FONT1,FS_BOLD,10);
 $graph->xaxis->title->Set('x degrees');
 
-$graph->yaxis->title->SetFont(FF_ARIAL,FS_BOLD,10);
+$graph->yaxis->title->SetFont(FF_FONT1,FS_BOLD,10);
 $graph->yaxis->title->Set('sin(x)');
 
 // Create the linear plot
