@@ -1,8 +1,8 @@
 <?php
 ini_set('display_errors',1);
 //required PHP scripts
-require_once('jpgraph/jpgraph.php');
-require_once('jpgraph/jpgraph_line.php');
+require_once('./jpgraph/jpgraph.php');
+require_once('./jpgraph/jpgraph_line.php');
 
 
 //preparing data
@@ -61,6 +61,7 @@ $graph->Add($linePlot);
 // Display the graph
 //https://jpgraph.net/download/manuals/classref/Graph.html#_GRAPH_STROKE
 $graph->stroke();
+
 
 
 
