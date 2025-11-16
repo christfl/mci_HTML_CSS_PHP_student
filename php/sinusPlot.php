@@ -1,7 +1,8 @@
 <?php
 ini_set('display_errors',1);
 //required PHP scripts
-define('TTF_DIR',__DIR__.'/jpgraph/fonts/');
+//define('TTF_DIR',__DIR__.'/jpgraph/fonts/');
+define('USE_TTF',false);
 require_once(__DIR__.'/jpgraph/jpgraph.php');
 require_once(__DIR__.'/jpgraph/jpgraph_line.php');
 
@@ -68,5 +69,6 @@ $graph->stroke();
 
 
 ?>
+
 
 
