@@ -1,6 +1,7 @@
 <?php
 ini_set('display_errors',1);
 //required PHP scripts
+define('TTF_DIR',__DIR__.'/jpgraph/fonts/');
 require_once(__DIR__.'/jpgraph/jpgraph.php');
 require_once(__DIR__.'/jpgraph/jpgraph_line.php');
 
@@ -33,13 +34,13 @@ $graph->SetScale('linlin');
 //https://jpgraph.net/download/manuals/chunkhtml/example_src/common-obj-graph.html
 //TextProperty class : https://jpgraph.net/download/manuals/classref/TextProperty.html 
 
-$graph->title->SetFont(FF_ARIAL,FS_BOLD,14);
+$graph->title->SetFont(FF_FONT1,FS_BOLD,14);
 $graph->title->Set('Sin(x)');
 
-$graph->subtitle->SetFont(FF_ARIAL,FS_BOLD,10);
+$graph->subtitle->SetFont(FF_FONT1,FS_BOLD,10);
 $graph->subtitle->Set('x in degrees');
 
-$graph->xaxis->title->SetFont(FF_ARIAL,FS_BOLD,10);
+$graph->xaxis->title->SetFont(FF_FONT1,FS_BOLD,10);
 $graph->xaxis->title->Set('x degrees');
 
 $graph->yaxis->title->SetFont(FF_ARIAL,FS_BOLD,10);
